@@ -10,8 +10,6 @@ layout: minimal
 
 ### NCCS ###
 
-[on-call list (inside only)](https://wwwadm.ccs.ornl.gov/nccs_oncall) | [PALS](https://timetracker.ornl.gov/timetracker/#/)
-
 <a href="https://wwwadm.ccs.ornl.gov/nccs_oncall" target="_blank">NCCS oncall list (inside only)</a> | <a href="https://wiki.ccs.ornl.gov/doku/hpss_dev" target="_blank">NCCS wiki</a> | <a href="https://timetracker.ornl.gov/timetracker/#/" target="_blank">PALS</a>
 
 ### IBM ###
