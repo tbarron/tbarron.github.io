@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: minimal
 ---
 
 ## Understanding Jekyll ##
@@ -28,15 +28,14 @@ Content files (say, content.md) have the structure
 
 When jekyll runs, it
 
- * looks at a content file,
+ * opens content.md for reading, content.html for writing
  * gets the layout filename from the yaml lines at the top of the file
    (between the '---' lines),
  * writes the material from the layout that precedes "&#123;&#123; content }}",
  * renders the material from the content file from markdown (or whatever) into html,
- * writes the material from the layout that follows "&#123;&#123; content }}".
+ * writes the material from the layout that follows "&#123;&#123; content }}",
+ * moves on to the next content file.
 
 The material in the layout file can use Liquid references (which looks
 to me suspiciously like Jinja syntax) to incorporate and process
 content and material from files in _includes and _css.
-
-For stuff to do and questions to research, see the home page.
