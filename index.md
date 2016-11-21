@@ -14,6 +14,8 @@ layout: minimal
  * github jekyll is behaving differently from local jekyll. Local
    jekyll is fine with my style sheets in css but github jekyll
    doesn't seem to like that.
+   * Well, now it seems to be okay. I guess it just took a few minutes
+     to rebuild stuff.
 
  * How do I get a &#123; into a code block in markdown? If I use the
    code reference, it doesn't get translated. If I use the literal
