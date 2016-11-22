@@ -11,9 +11,6 @@ layout: minimal
 
  * Figure out what's going on with doiserv, identserv, doirecv
 
- * Can I get a "last built" string in my header so I can get some
-   feedback about how long builds are lagging?
-
  * Work out a way to change the layout of all pages in one place
    rather than having to edit each page file.
 
@@ -87,3 +84,6 @@ layout: minimal
    code reference, it doesn't get translated. If I use the literal
    character, it doesn't show up.
    * The solution was the {% raw %} ... {% endraw %} syntax
+
+ * Can I get a "last built" string in my header so I can get some
+   feedback about how long builds are lagging?
