@@ -13,16 +13,20 @@ presentation formatting material.
 Content goes in markdown (or textile, or whatever) files in the root
 of the repository (and for blog entries, in _posts).
 
-Files in _layouts have the structure
+Suppose we have a file called layout.html in directory _layouts. It
+will have this kind of structure:
 
-    ... <html stuff, perhaps using items from _includes and _css> ...
-    \{\{ content \}\}
+    {% raw %}
+    ... <html stuff, perhaps using items from _includes and css> ...
+    {{ content }}
     ... <more html stuff> ...
+    {% endraw %}
 
-Content files (say, content.md) have the structure
+Then suppose we have a file of content in the repository root that
+uses layout.html. Let's call it content.md. it will look like this:
 
     ---
-    layout: <layout file name>
+    layout: layout.html
     ---
     <markdown syntax>
 
