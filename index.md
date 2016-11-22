@@ -1,7 +1,5 @@
 ---
-layout: minimal
 ---
-
 ## Contents ##
 
  * [jekyll](jekyll.html)

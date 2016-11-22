@@ -1,7 +1,5 @@
 ---
-layout: minimal
 ---
-
 ## Understanding Jekyll ##
 
 This is the piece of documentation I needed last night to understand

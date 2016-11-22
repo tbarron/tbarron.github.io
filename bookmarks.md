@@ -1,7 +1,5 @@
 ---
-layout: minimal
 ---
-
 ## Bookmarks ##
 
 ### Personal ###
