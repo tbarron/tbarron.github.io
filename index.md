@@ -4,13 +4,15 @@
 
  * [jekyll](jekyll.html)
  * [bookmarks](bookmarks.html)
+ * [backscratcher (placeholder linking back to this page)](index.html)
+ * [editor (placeholder linking back to this page)](index.html)
+ * [emacs_goodies (placeholder linking back to this page)](index.html)
+ * [envy (placeholder linking back to this page)](index.html)
+ * ...
 
 ## Next steps ##
 
  * Figure out what's going on with doiserv, identserv, doirecv
-
- * Work out a way to change the layout of all pages in one place
-   rather than having to edit each page file.
 
  * See if brew will install Emacs 24.X so I can use package.el and
    markdown-mode.el
@@ -29,7 +31,15 @@
 
  * Add directories and files to this repo describing my various
    projects -- backscratcher, editor, etc. -- and link to them in the
-   Contents list above
+   Contents list above (I've added some empty
+
+ * Move answered questions and completed tasks to a new page named
+   done.md (-> done.html)
+
+ * Do I want this list of things to do on this page or off on a page
+   by itself?
+
+ * ...
 
 ## Answered Questions, Completed Tasks ##
 
@@ -85,3 +95,16 @@
 
  * Can I get a "last built" string in my header so I can get some
    feedback about how long builds are lagging?
+
+ * Work out a way to change the layout of all pages in one place
+   rather than having to edit each page file.
+   * This involved creating a _config.yml and setting the default
+     layout there. However, I also had to remove the explicit layout
+     setting from each content file (but we have to keep the empty
+     front matter section so jekyll knows to process the file). I also
+     created a straw man layout called 'unset.html' to have a B to
+     test the A (minimal) against so I can flip the layout back and
+     forth and see the change. I have to restart the local test server
+     for it to see updates to _config.yml since jekyll just reads the
+     config once at startup. However, with the server at github, I
+     just push the site and the change shows up.
