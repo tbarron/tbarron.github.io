@@ -1,5 +1,5 @@
 .env
 _site
-attic
+_attic
 *.lock
 *~
