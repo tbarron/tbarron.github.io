@@ -36,6 +36,12 @@
  * Do I want this list of things to do on this page or off on a page
    by itself?
 
+ * Read about jekyll's post_url tag at https://jekyllrb.com/docs/templates/\#post-url
+
+ * Pasting in emacs is messed up. Every time I paste, the cursor jumps to
+   the top of the page and the pasted material winds up someplace I don't
+   want it AND it gets mangled. Need to figure this out.
+
  * ...
 
 ## Answered Questions, Completed Tasks ##
