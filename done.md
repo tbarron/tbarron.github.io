@@ -2,6 +2,11 @@
 title: Answered Questions, Completed Tasks
 ---
 
+ * Can jekyll handle comments?
+   * Actually, the relevant tech is markdown. And it turns out that emacs'
+     markdown mode will block comment and uncomment in a way that works for
+     markdown (by commenting each line individually). [2016-11-24 16:47:48]
+
  * Maybe what I really want is to put this list in README.md so it shows up
    near the top of github.com/tbarron/tbarron.github.io and the actual site
    tbarron.github.io is cleaner.

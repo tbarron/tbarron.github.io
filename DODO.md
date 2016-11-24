@@ -6,8 +6,6 @@ title: Stuff I Want To Get Done
 
  * Fix the issues with doirecv, doisub, doifetch
 
- * Can jekyll handle comments?
-
  * Go back to github and generate the other themes so I can have them
    locally and jump around among them.
 
