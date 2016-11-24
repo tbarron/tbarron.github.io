@@ -68,20 +68,8 @@ title: Stuff I Want To Get Done
    date of the last update to the content file (not the footer file) shows
    up
 
- * Maybe what I really want is to put this list in README.md so it shows up
-   near the top of github.com/tbarron/tbarron.github.io and the actual site
-   tbarron.github.io is cleaner.
-   * Well, that doesn't seem to be working out very well either. I think I
-     want the list of action items in DODO.md so they get processed into
-     DODO.html and I can link to them there. README.md should be a static
-     "about" page that doesn't change a whole lot. That will resolve the
-     next task, about getting the "next steps" link to resolve differently
-     when it's local and when it's remote.
+ * Write a test script that uses curl to fetch https://tbarron.github.io
+   and then checks all the links it finds. It should also look through the
+   _sites directory and report any pages that are not reachable.
 
- * When I'm on the local mirror, I'd like "next steps" to take me to a
-   rendered version of README.md (README.html?). When I'm on the remote
-   site (tbarron.github.io), I'd like "next steps" to take me to
-   https://github.com/tbarron/tbarron.github.io/blob/master/README.md. Is
-   this possible?
-
- [completed](done.md)
+ [completed](done.html)

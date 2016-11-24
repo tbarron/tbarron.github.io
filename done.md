@@ -2,6 +2,28 @@
 title: Answered Questions, Completed Tasks
 ---
 
+ * Maybe what I really want is to put this list in README.md so it shows up
+   near the top of github.com/tbarron/tbarron.github.io and the actual site
+   tbarron.github.io is cleaner.
+   * Well, that doesn't seem to be working out very well either. I think I
+     want the list of action items in DODO.md so they get processed into
+     DODO.html and I can link to them there. README.md should be a static
+     "about" page that doesn't change a whole lot. That will resolve the
+     next task, about getting the "next steps" link to resolve differently
+     when it's local and when it's remote.
+     [2016-11-24 07:20:03]
+
+ * When I'm on the local mirror, I'd like "next steps" to take me to a
+   rendered version of README.md (README.html?). When I'm on the remote
+   site (tbarron.github.io), I'd like "next steps" to take me to
+   https://github.com/tbarron/tbarron.github.io/blob/master/README.md. Is
+   this possible?
+   * Actually, this is way too complicated. That should be a clue that I'm
+     doing something wrong. It's much simpler to put the list of next steps
+     in DODO.md and let them get rendered to DODO.html. That way, they can
+     be referenced easily and consistently whether we're local or remote.
+     [2016-11-24 07:20:03]
+
  * Add directories and files to this repo describing my various
    projects -- backscratcher, editor, etc. -- and link to them in the
    Contents list above (I've added some empty [2016-11-24 06:25:09]
