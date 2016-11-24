@@ -6,6 +6,8 @@ title: Stuff I Want To Get Done
 
  * Fix the issues with doirecv, doisub, doifetch
 
+ * Can jekyll handle comments?
+
  * Go back to github and generate the other themes so I can have them
    locally and jump around among them.
 
@@ -14,10 +16,20 @@ title: Stuff I Want To Get Done
    [integrel.org pmwiki](http://integrel.org/pmwiki/pmwiki.php?n=Tom.Bookmarks)
    page into tbarron.github.io/bookmarks.md
 
- * Hack support for links with a target attribute into markdown. A nice
-   feature would be syntax I could put in the markdown file that would say,
-   "all the links in this file should have attribute 'target=<blah>'" so
-   they could all be changed in one place if desired.
+ * Features I'd like to see in markdown (that might be worth implementing
+   my own markdown parser to get):
+   * links with target attribute
+     ([Multimarkdown](http://fletcherpenney.net/multimarkdown/) provides
+     this)
+   * It would be nice to be able to set a file level attribute that would
+     inject a target="foo" attribute into every link on the page. I don't
+     think multimarkdown can do this.
+   * The ability to embed comments that don't get rendered in markdown
+     files
+     * Well, it looks like markdown actually does support HTML comments but
+       each line has to be commented individually. Nice that the emacs
+       markdown mode knows to do this when you tell it \M-r with lines
+       selected.
 
  * Incorporate my new markdown processor into jekyll.
 
