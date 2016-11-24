@@ -14,9 +14,6 @@
 
  * Figure out what's going on with doiserv, identserv, doirecv
 
- * See if brew will install Emacs 24.X so I can use package.el and
-   markdown-mode.el
-
  * Set up for blogging
    * mkdir _posts
    * cp jekyll.md _posts/2016-11-21-understanding-jekyll.md
@@ -108,3 +105,10 @@
      for it to see updates to _config.yml since jekyll just reads the
      config once at startup. However, with the server at github, I
      just push the site and the change shows up.
+
+ * See if brew will install Emacs 24.X so I can use package.el and
+   markdown-mode.el
+   * Actually, it gave me Emacs 25.1.1 in 3 minutes, 59 seconds
+
+ * With emacs 25.1, I was able to set up the package installer and use it
+   to install markdown-mode.
