@@ -69,5 +69,5 @@ First attempt at a github pages site
  
  * ...
 
- [completed](done.html)
+ [completed](https://github.com/tbarron/tbarron.github.io/blob/master/done.md)
 
