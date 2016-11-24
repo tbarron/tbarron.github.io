@@ -91,3 +91,7 @@ title: Answered Questions, Completed Tasks
 
  * Figure out: Why is jekyll not processing bookmarks.md into bookmarks.html?
    * Apparently it was some kind of caching issue. Now it's working.
+
+  * I'd like to change the title of the front page. Will jekyll let me do that?
+
+  * I want jekyll to build index.html from, say index.md. Can we do that?

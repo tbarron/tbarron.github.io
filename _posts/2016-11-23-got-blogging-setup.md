@@ -1,7 +1,6 @@
 ---
 title: Blogging is Set Up
 ---
-## {{ page.title }} ##
 
 So I got blogging set up and I can write all I want here. Here's what it
 took:

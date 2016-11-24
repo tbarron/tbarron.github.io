@@ -1,4 +1,5 @@
 ---
+title: blog
 ---
 <div id="post">
   <ul>

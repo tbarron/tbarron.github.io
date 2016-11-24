@@ -1,6 +1,6 @@
 ---
+title: Understanding Jekyll
 ---
-## Understanding Jekyll ##
 
 This is the piece of documentation I needed last night to understand
 how Jekyll is supposed to work.
