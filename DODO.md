@@ -6,9 +6,6 @@ title: Stuff I Want To Get Done
 
  * Fix the issues with doirecv, doisub, doifetch
 
- * Go back to github and generate the other themes so I can have them
-   locally and jump around among them.
-
  * Copy bookmarks from
    [google bookmarks](https://www.google.com/bookmarks/),
    [integrel.org pmwiki](http://integrel.org/pmwiki/pmwiki.php?n=Tom.Bookmarks)
@@ -30,9 +27,6 @@ title: Stuff I Want To Get Done
        selected.
 
  * Incorporate my new markdown processor into jekyll.
-
- * Move answered questions and completed tasks to a new page named
-   done.md (-> done.html)
 
  * Read about jekyll's post_url tag at
    https://jekyllrb.com/docs/templates/\#post-url
@@ -69,10 +63,6 @@ title: Stuff I Want To Get Done
 
  * How do I create an anchor to an internal point in a file like I see on
    TWP's site and in the jekyll docs?
-
- * Figure out a way to add a "last update" time stamp in the footer so the
-   date of the last update to the content file (not the footer file) shows
-   up
 
  * Write a test script that uses curl to fetch https://tbarron.github.io
    and then checks all the links it finds. It should also look through the

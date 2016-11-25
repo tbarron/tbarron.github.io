@@ -2,6 +2,16 @@
 title: Answered Questions, Completed Tasks
 ---
 
+ * Figure out a way to add a "last update" time stamp in the footer so the
+   date of the last update to the content file (not the footer file) shows
+   up [2016-11-24 20:14:53]
+
+ * Move answered questions and completed tasks to a new page named
+   done.md (-> done.html) [2016-11-24 20:13:20]
+
+ * Go back to github and generate the other themes so I can have them
+   locally and jump around among them. [2016-11-24 20:12:47]
+
  * Learn about drafts in jekyll
    * I decided that to keep a file unpublished, I just won't add it to git.
      [2016-11-24 19:43:29]
