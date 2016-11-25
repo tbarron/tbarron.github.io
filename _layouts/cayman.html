@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/cayman/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/cayman/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      {% include head.html %}
+    </section>
+
+    <section class="main-content">
+      <h2>{{ page.title }}</h2>
+
+        {{ content }}
+
+    </section>
+
+    <footer>
+      <p><small>Last update: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}
+        </small>
+      </p>
+    </footer>
+  </body>
+</html>
