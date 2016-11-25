@@ -2,6 +2,17 @@
 title: Answered Questions, Completed Tasks
 ---
 
+ * Learn about drafts in jekyll
+   * I decided that to keep a file unpublished, I just won't add it to git.
+     [2016-11-24 19:43:29]
+
+ * Can I tag blog posts in jekyll?
+   * Yes, jekyll provides some basic tagging.
+     [This](https://jekyllrb.com/docs/variables/) talks about the variable
+     page.tags but it looks like you have to do some work (or find somebody
+     else's code that does whatever it is that you want) to use them.
+     [2016-11-24 19:42:27]
+
  * Can jekyll handle comments?
    * Actually, the relevant tech is markdown. And it turns out that emacs'
      markdown mode will block comment and uncomment in a way that works for

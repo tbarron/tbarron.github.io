@@ -67,10 +67,6 @@ title: Stuff I Want To Get Done
 
  * Add github pages to tbx
 
- * Can I tag blog posts in jekyll?
-
- * Learn about drafts in jekyll
-
  * How do I create an anchor to an internal point in a file like I see on
    TWP's site and in the jekyll docs?
 
