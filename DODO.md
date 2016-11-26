@@ -27,23 +27,61 @@ title: Stuff I Want To Get Done
    should be just enough to allow calling the library from the command
    line.
 
- * Add github pages to backscratcher
-
- * Add github pages to editor
-
- * Add github pages to emacs_goodies
-
- * Add github pages to envy
-
- * Add github pages to fns
-
- * Add github pages to githooks
-
- * Add github pages to gitr
-
- * Add github pages to spackle
-
- * Add github pages to tbx
+ * For each project
+   * backscratcher
+     * <font color='red'>clone to ~/prj/github</font>
+     * <font color='red'>add github pages</font>
+     * <font color='red'>write documentation page</font>
+     * <font color='red'>write dodo page</font>
+     * <font color='red'>update link on tbarron homepage to point at dodo page</font>
+   * editor
+     * <font color='green'>DONE: clone to ~/prj/github</font>
+     * <font color='green'>DONE: add github pages</font>
+     * <font color='red'>write documentation page</font>
+     * <font color='red'>write dodo page</font>
+     * <font color='red'>update link on tbarron homepage to point at dodo page</font>
+   * emacs_goodies
+     * <font color='red'>clone to ~/prj/github</font>
+     * <font color='red'>add github pages</font>
+     * <font color='red'>write documentation page</font>
+     * <font color='red'>write dodo page</font>
+     * <font color='red'>update link on tbarron homepage to point at dodo page</font>
+   * envy
+     * <font color='red'>clone to ~/prj/github</font>
+     * <font color='red'>add github pages</font>
+     * <font color='red'>write documentation page</font>
+     * <font color='red'>write dodo page</font>
+     * <font color='red'>update link on tbarron homepage to point at dodo page</font>
+   * fns
+     * <font color='red'>clone to ~/prj/github</font>
+     * <font color='red'>add github pages</font>
+     * <font color='red'>write documentation page</font>
+     * <font color='red'>write dodo page</font>
+     * <font color='red'>update link on tbarron homepage to point at dodo page</font>
+   * githooks
+     * <font color='red'>clone to ~/prj/github</font>
+     * <font color='red'>add github pages</font>
+     * <font color='red'>write documentation page</font>
+     * <font color='red'>write dodo page</font>
+     * <font color='red'>update link on tbarron homepage to point at dodo page</font>
+   * gitr
+     * <font color='red'>clone to ~/prj/github</font>
+     * <font color='red'>add github pages</font>
+     * <font color='red'>write documentation page</font>
+     * <font color='red'>write dodo page</font>
+     * <font color='red'>update link on tbarron homepage to point at dodo page</font>
+   * spackle
+     * <font color='red'>clone to ~/prj/github</font>
+     * <font color='red'>add github pages</font>
+     * <font color='red'>write documentation page</font>
+     * <font color='red'>write dodo page</font>
+     * <font color='red'>update link on tbarron homepage to point at dodo page</font>
+   * tbx
+     * <font color='red'>clone to ~/prj/github</font>
+     * <font color='red'>add github pages</font>
+     * <font color='red'>write documentation page</font>
+     * <font color='red'>write dodo page</font>
+     * <font color='red'>update link on tbarron homepage to point at dodo page</font>
 
  * How do I create an anchor to an internal point in a file like I see on
    TWP's site and in the jekyll docs?
