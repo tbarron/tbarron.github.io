@@ -6,11 +6,19 @@ title: Stuff I Want To Get Done
 
  * Fix the issues with doirecv, doisub, doifetch
 
+ * I use \C-v to scroll down the buffer, so I need to take it back off
+   osx-paste.
+   * Remove \C-v from osx-paste.
+   * Pick another key binding for osx-paste.
+   * Pick a key binding for delete-trailing-whitespace.
+
  * Copy bookmarks from
    [google bookmarks](https://www.google.com/bookmarks/),
    [integrel.org pmwiki](http://integrel.org/pmwiki/pmwiki.php?n=Tom.Bookmarks)
    page into tbarron.github.io/bookmarks.md
 
+ * Copy other stuff from [integrel.org](http://integrel.org) into
+   tbarron.github.io
 
  * Read about jekyll's post_url tag at
    https://jekyllrb.com/docs/templates/\#post-url
