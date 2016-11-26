@@ -11,22 +11,6 @@ title: Stuff I Want To Get Done
    [integrel.org pmwiki](http://integrel.org/pmwiki/pmwiki.php?n=Tom.Bookmarks)
    page into tbarron.github.io/bookmarks.md
 
- * Features I'd like to see in markdown (that might be worth implementing
-   my own markdown parser to get):
-   * links with target attribute
-     ([Multimarkdown](http://fletcherpenney.net/multimarkdown/) provides
-     this)
-   * It would be nice to be able to set a file level attribute that would
-     inject a target="foo" attribute into every link on the page. I don't
-     think multimarkdown can do this.
-   * The ability to embed comments that don't get rendered in markdown
-     files
-     * Well, it looks like markdown actually does support HTML comments but
-       each line has to be commented individually. Nice that the emacs
-       markdown mode knows to do this when you tell it \M-r with lines
-       selected.
-
- * Incorporate my new markdown processor into jekyll.
 
  * Read about jekyll's post_url tag at
    https://jekyllrb.com/docs/templates/\#post-url
@@ -67,5 +51,22 @@ title: Stuff I Want To Get Done
  * Write a test script that uses curl to fetch https://tbarron.github.io
    and then checks all the links it finds. It should also look through the
    _sites directory and report any pages that are not reachable.
+
+ * Features I'd like to see in markdown (that might be worth implementing
+   my own markdown parser to get):
+   * links with target attribute
+     ([Multimarkdown](http://fletcherpenney.net/multimarkdown/) provides
+     this)
+   * It would be nice to be able to set a file level attribute that would
+     inject a target="foo" attribute into every link on the page. I don't
+     think multimarkdown can do this.
+   * The ability to embed comments that don't get rendered in markdown
+     files
+     * Well, it looks like markdown actually does support HTML comments but
+       each line has to be commented individually. Nice that the emacs
+       markdown mode knows to do this when you tell it \M-r with lines
+       selected.
+
+ * Incorporate my new markdown processor into jekyll.
 
  [completed](done.html)
