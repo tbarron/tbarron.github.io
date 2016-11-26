@@ -1,13 +1,17 @@
 ---
+title: Bookmarks
 ---
-## Bookmarks ##
-
 ### Interesting People ###
 
-<a href="https://www.preposterousuniverse.com/" target="_blank">Sean
-Carroll (physicist)</a>
-| <a href="http://tom.preston-werner.com/" target="_blank">Tom
-  Preston-Werner (founder of github)</a>
+<a href="https://www.preposterousuniverse.com/" target="_blank">
+  Sean Carroll (physicist)
+  </a>
+| <a href="http://tom.preston-werner.com/" target="_blank">
+  Tom Preston-Werner (founder of github)
+  </a>
+| <a href="https://www.damninteresting.com/" target="_blank">
+  Damn Interesting
+  </a>
 
 ### Personal ###
 
