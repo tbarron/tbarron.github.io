@@ -2,6 +2,13 @@
 title: Answered Questions, Completed Tasks
 ---
 
+ * I use \C-v to scroll down the buffer, so I need to take it back off
+   osx-paste.
+   * Remove \C-v from osx-paste.
+   * Pick another key binding for osx-paste.
+   * Pick a key binding for delete-trailing-whitespace.
+     [2016-11-26 19:11:50]
+
  * Figure out a way to add a "last update" time stamp in the footer so the
    date of the last update to the content file (not the footer file) shows
    up [2016-11-24 20:14:53]
