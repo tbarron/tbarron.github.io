@@ -2,6 +2,20 @@
 title: Answered Questions, Completed Tasks
 ---
 
+ * Pasting in emacs 25 is messed up. Every time I paste, the cursor jumps
+   to the top of the page and the pasted material winds up someplace I
+   don't want it AND it gets mangled. Need to figure this out. I suspect
+   some obscure (to me) setting that I need to tweak.
+   * I have found a solution (more or less). Ideally, I'd like to be able
+     to paste with Command-V, like I do in the shell or other contexts.
+     However, that's what is messed up. The more-or-less solution is an
+     emacs lisp function I wrote based on information from [this
+     post](http://stackoverflow.com/questions/9985316/how-to-paste-to-emacs-from-clipboard-on-osx)
+     on StackOverflow. I have bound key sequence \M-v to the function, so
+     that's how I'm pasting for now. I didn't want to use \C-v because I've
+     had it bound to eval-buffer for some time and don't want to change it.
+     [2016-11-28 07:05:41]
+
  * I use \C-v to scroll down the buffer, so I need to take it back off
    osx-paste.
    * Remove \C-v from osx-paste.

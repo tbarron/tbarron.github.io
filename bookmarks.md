@@ -1,7 +1,23 @@
 ---
 title: Bookmarks
 ---
-### Interesting People ###
+
+Book mark lists to drain:
+| <a target="_"
+     href="https://www.google.com/bookmarks/">
+     Google Bookmarks
+     </a>
+| <a target="_"
+     href="http://integrel.org/pmwiki/pmwiki.php?n=Tom.Bookmarks">
+     Bookmarks at integrel.org
+     </a>
+| <a target="_"
+     href="http://integrel.org/pmwiki/pmwiki.php?n=Tom.WorkBookmarks">
+     Work bookmarks at integrel.org
+     </a>
+
+
+### Interesting Sites ###
 
 <a href="https://www.preposterousuniverse.com/" target="_blank">
   Sean Carroll (physicist)

@@ -6,21 +6,13 @@ title: Stuff I Want To Get Done
 
  * Fix the issues with doirecv, doisub, doifetch
 
- * Copy bookmarks from
-   [google bookmarks](https://www.google.com/bookmarks/),
-   [integrel.org pmwiki](http://integrel.org/pmwiki/pmwiki.php?n=Tom.Bookmarks)
-   page into tbarron.github.io/bookmarks.md
-
  * Copy other stuff from [integrel.org](http://integrel.org) into
    tbarron.github.io
 
- * Read about jekyll's post_url tag at
-   https://jekyllrb.com/docs/templates/\#post-url
-
- * Pasting in emacs 25 is messed up. Every time I paste, the cursor jumps
-   to the top of the page and the pasted material winds up someplace I
-   don't want it AND it gets mangled. Need to figure this out. I suspect
-   some obscure (to me) setting that I need to tweak.
+ * Jekyll features to explore
+   * [post_url](https://jekyllrb.com/docs/templates/\#post-url)
+   * [syntax highlighting](https://jekyllrb.com/docs/templates/#code-snippet-highlighting)
+     (and line numbering)
 
  * TWP's [Chronic](https://github.com/mojombo/chronic) provides a large
    list of test cases for a date parser. I could use this list for testing
@@ -28,6 +20,14 @@ title: Stuff I Want To Get Done
    functionality baked into an interface command. The interface command
    should be just enough to allow calling the library from the command
    line.
+
+ * Break dt out into a separate project
+
+ * Can I put an .htaccess and .htpasswd file in my github pages repo and
+   control access to (some of) the pages that way?
+   * No, silly. The repo itself is public, so everyone would be able to see
+     the .htpasswd file.
+   * Yeah, but the password itself would be encrypted.
 
  * For each project
    * backscratcher
@@ -100,6 +100,8 @@ title: Stuff I Want To Get Done
    * It would be nice to be able to set a file level attribute that would
      inject a target="foo" attribute into every link on the page. I don't
      think multimarkdown can do this.
+   * A way to break a long line for readability (e.g., URLs, quotations)
+     and have markdown re-assemble the pieces in the output
    * The ability to embed comments that don't get rendered in markdown
      files
      * Well, it looks like markdown actually does support HTML comments but
@@ -108,5 +110,15 @@ title: Stuff I Want To Get Done
        selected.
 
  * Incorporate my new markdown processor into jekyll.
+
+ * I have an acceptable work-around, but I'd still like to figure out a way
+   to paste in emacs using Command-V rather than an alternate key sequence.
+   * Maybe what I want to do is move eval-buffer to \M-v and let \C-v be my
+     paste command.
+
+ * Copy the bookmarks I still care about from
+   [google bookmarks](https://www.google.com/bookmarks/),
+   [integrel.org pmwiki](http://integrel.org/pmwiki/pmwiki.php?n=Tom.Bookmarks)
+   page, etc., into tbarron.github.io/bookmarks.md
 
  [completed](done.html)
