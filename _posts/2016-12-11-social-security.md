@@ -44,8 +44,8 @@ Instead, Democrats are using Social Security as a political football to
 frighten you with the terrible ways Republicans want to spoil your
 retirement. They are (falsely) implying that:
 
- * A feasible option is keeping 100% of promised benefits forever without
-   making any changes to the system.
+ * Keeping 100% of promised benefits forever without making any changes to
+   the system is a feasible option.
  * Republicans want to take away your retirement and make you miserable.
 
 We should all grow up and quit whining. This is simple budgeting for the
