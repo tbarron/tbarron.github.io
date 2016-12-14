@@ -54,7 +54,7 @@ should field their own proposal so the details can be discussed and we can
 make a sensible choice. Sensationalizing the issue for political gain is
 irresponsible.
 
-I am not advocating the Republican position here. I'm just saying that the
+I am not advocating the Republican solution here. I'm just saying that the
 Democrats are acting like spoiled brats. Sometimes Republicans do that too.
 It would be far more productive for both sides to act like adults and work
 together to craft a sustainable safety net for all of us. I guess that's
