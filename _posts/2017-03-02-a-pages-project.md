@@ -12,3 +12,6 @@ Here are the steps:
     is visible at https://tbarron.github.io/PyBP/.
     
 All that's left to do is hack the actual content into what I want.
+
+    Update (2018.0913): Actually, the Best Practices book should go someplace
+    like readthedocs.org.
