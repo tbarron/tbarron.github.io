@@ -9,9 +9,9 @@ conventions of [Semantic Versioning](https://semver.org/) and
 
   * Checkout the current master branch to a child work branch with a
     meaningful name.
-    
+
         git checkout -b <new-branch>
-        
+
   * Make changes to the work branch until it is ready to become the next
     release.
 
@@ -24,9 +24,9 @@ conventions of [Semantic Versioning](https://semver.org/) and
             git tag -a <version>
 
       * Verify that all the tests pass.
-      
+
             py.test
-            
+
   * Checkout master and merge the work branch.
 
         git checkout master
@@ -35,7 +35,7 @@ conventions of [Semantic Versioning](https://semver.org/) and
   * Verify that all tests pass.
 
         py.test
-        
+
   * Push master to the origin.
 
         git push
