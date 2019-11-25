@@ -1,4 +1,5 @@
 .env
+DODO
 _site
 _attic
 *.lock
