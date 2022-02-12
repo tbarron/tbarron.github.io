@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+<script>var last_update = "Updated: <2022.0212 14:07:20>"</script>
 <html>
   <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <title>Tusculum</title>
 
     <!-- CSS ============================================================== -->
@@ -50,7 +51,7 @@
         <a href="https://bitbucket.org" target="_blank">Bitbucket</a>
       </div>
 
-      <div class="tiny tool commit">
+      <div id="last_update" class="tiny tool commit">
         {% if uptodate %}
         <font color='green'>{{ last_update }}</font>
         {% else %}
@@ -59,5 +60,14 @@
       </div>
 
     </div>
+<script>
+  window.onload = show_update;
+
+  function show_update() {
+    let el = document.getElementById("last_update");
+    el.value = last_update;
+    el.innerHTML = last_update;
+  }
+</script>
   </body>
 </html>
