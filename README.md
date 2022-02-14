@@ -1,4 +1,5 @@
 # tbarron.github.io
 
-Nothing to see here. Move along.
+Apps live in $ROOT/_ so they are all together in one place rather than scattered
+amongst the stuff in $ROOT.
 
