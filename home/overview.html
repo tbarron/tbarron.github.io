@@ -59,6 +59,48 @@
         <p>Each subproject (Calories Per Pound, Conway's Life, etc. -- see the
            front page) will get its own appropriately named subdirectory which
            will hold all the HTML, CSS, and JS files for that project.
+
+        <h3>Last Update Timestamps</h3>
+
+        <p>Emacs, my favorite editor, has a feature where it will insert the
+           current timestamp into the file being edited if a line near the top
+           has the form
+
+           <pre>   Updated: <></pre>
+
+           or
+
+           <pre>   Updated: ""</pre>
+
+           The timestamp is inserted when the file is saved, so it provides a
+           very precise way of tracking when the file was last updated.
+
+        <p>To exploit this, I have the following at the top of each of my HTML
+          files:
+
+          <pre>   &lt;script id="updated">Updated: "TIMESTAMP"&lt;/script>
+          </pre>
+
+        <p>In each of my CSS files:
+
+          <pre>   :root {
+       --updated: "TIMESTAMP";
+   }
+</pre>
+
+        <p>And in each of my JS files:
+
+          <pre>   var js_update = "Updated: TIMESTMP"; </pre>
+
+        <p>Finally, I have written a JS function called show_update() and
+          arranged for it to be called when the window is loaded.
+
+          <pre>   window.onload = show_update;  </pre>
+
+        <p>If everything is set up properly, when one of my pages is loaded, in
+        the right lower corner will appear as display of the dates and times of
+        the most recent updates to the HTML, the CSS, and the JS file.
+
       </div>
       <div id="last_update" class="commit"></div>
   </body>
