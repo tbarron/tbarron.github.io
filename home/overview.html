@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<script id="updated">Updated: "2022.0214 08:18:14"</script>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <title>JaCH</title>
+
+    <!-- CSS ============================================================== -->
+    <link rel="stylesheet" type="text/css"
+          href="index.css">
+    <link rel="shorcut icon" href="data:image/x-icon" type="image/x-icon" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <header id="header"> -->
+
+      <div class="lgrav">
+        <img class="gravimg"
+               src="https://s.gravatar.com/avatar/0694d753f7e2b3839c9d4dce5feff668?s=80"/>
+      </div>
+
+      <div class="title">
+        <center><h1>JaCH: Javascript, CSS, HTML</h1></center>
+      </div>
+
+      <div class="rgrav">
+        <img class="gravimg"
+             src="https://s.gravatar.com/avatar/0f0a2a863234b72a801c689bf4bec6c0?s=80"/>
+      </div>
+
+      <div class="text">
+        <h3>$ROOT</h3>
+
+        <p>$ROOT is a shorthand for the directory where the current project's
+           files reside on my machine.
+
+        <h3>Directory Layout</h3>
+
+        <p>This is an overview of one way to set up a collection of
+           Javascript/CSS/HTML projects. Oftentimes, the recommendation is to
+           put all the Javascript files in one directory (often called 'js'),
+           all the CSS files in another directory ('css' or 'styles' or the
+           like), and all the HTML files in yet another directory ('templates'
+           or 'layouts' or some such).
+
+        <p>Setting things up this way forces the developer to constantly be
+           jumping from directory to directory and can often make things more
+           difficult to find.
+
+        <p>I'm trying a different structure, putting all the files related to a
+           particular project together in one directory. So, for example, the
+           source for this file, the <a href="../index.html">front page of this
+           site</a>, the CSS to format them, and the Javascript for reporting
+           each HTML file's last update (see the bottom right corner of this
+           page) all live in the same directory, $ROOT/home/.
+
+        <p>Each subproject (Calories Per Pound, Conway's Life, etc. -- see the
+           front page) will get its own appropriately named subdirectory which
+           will hold all the HTML, CSS, and JS files for that project.
+      </div>
+      <div id="last_update" class="commit"></div>
+  </body>
+</html>
