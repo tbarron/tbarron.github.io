@@ -1,5 +1,5 @@
 window.onload = show_update;
-var js_update = "Updated: <2022.0215 17:26:02>";
+var js_update = "Updated: <2022.0215 17:55:11>";
 
 function clean(s) {
     let tmp = s.replace("Updated: ", "");
@@ -46,9 +46,16 @@ function show_update() {
     }
 
     let target = document.getElementById("last_update");
-    if (target !== null) {
-        console.log(target);
-        target.value = result;
-        target.innerHTML = result;
+    if (target == null) {
+        const lup = document.createElement("div");
+        lup.setAttribute("id", "last_update");
+        lup.setAttribute("class", "commit");
+
+        let bodylist = document.getElementsByTagName("body");
+        bodylist[0].appendChild(lup);
     }
+
+    target = document.getElementById("last_update");
+    target.value = result;
+    target.innerHTML = result;
 }
