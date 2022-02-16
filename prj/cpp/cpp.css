@@ -1,0 +1,70 @@
+:root {
+    --updated: "<2022.0216 08:05:06>";
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    // font-size: 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.cpp-container {
+    display: grid;
+    gap: 20p;
+    grid-template-columns: 15% auto 15%;
+    background-color: lightyellow;
+    // grid-template-rows: 200 auto auto;
+}
+
+.cpp-content {
+    // background-color: skyblue;
+    //display: grid;
+    // place-items: center;
+    grid-column-start: 2;
+}
+
+#cpp-title {
+    background-color: lightyellow;
+}
+
+#cpp-desc {
+    grid-column: 2;
+    // grid-row: 1;
+    background-color: cream;
+}
+
+#cpp-inputs {
+    // grid-row: 2;
+    background-color: pink;
+}
+
+#cpp-cpog {
+    background-color: skyblue;
+}
+
+#cpp-cplb {
+    background-color: lavender;
+}
+
+#cpp-buttons {
+    background-color: lightyellow;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 10px;
+    padding: 10px;
+}
+
+li {
+    padding: 10px;
+}
+
