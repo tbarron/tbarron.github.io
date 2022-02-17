@@ -10,17 +10,6 @@ function cal_by_weight(cal_p_unit, unit_mult) {
 }
 
 function clear_elements(elist) {
-}
-
-function decide(cps, cpw) {
-    if (isNaN(cps) && isNaN(cpw)) {
-        return 0;
-    } else if (!isNaN(cps)) {
-        return 1;
-    } else if (!isNaN(cpw)) {
-        return 2;
-    } else {
-        return 3;
         setElementValue(elist[idx], "");
     }
 }
@@ -87,18 +76,13 @@ function click_calculate() {
     var unit_pp = getFloatValue("unit_pp");
     var cp_unit = getFloatValue("cp_unit");
 
-    switch (decide(cps, cpw)) {
-    case 0:
+    if (isNaN(cps) && isNaN(cpw)) {
         instruct();
-        break;
-    case 1:
-        pkg_calculation(cps, spp, wpp, unit_pp, "#cpp");
-        break;
-    case 2:
-        wgt_calculation(cpw, cp_unit, "#cpp");
-        break;
-    case 3:
+    } else if (!isNaN(cps)) {
+        pkg_calculation(cps, spp, wpp, unit_pp, "cpp");
+    } else if (!isNaN(cpw)) {
+        wgt_calculation(cpw, cp_unit, "cpp");
+    } else {
         hell_frozen();
-        break;
     }
 }
