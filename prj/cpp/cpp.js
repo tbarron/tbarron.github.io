@@ -1,4 +1,9 @@
 var js_update = "Updated: <2022.0217 09:03:23>"
+function setElementValue(id, val) {
+    var el = document.getElementById(id);
+    el.value = val;
+    el.innerHTML = val;
+}
 
 function cal_by_weight(cal_p_unit, unit_mult) {
     return(cal_p_unit * unit_mult);
@@ -22,6 +27,7 @@ function decide(cps, cpw) {
         return 2;
     } else {
         return 3;
+        setElementValue(elist[idx], "");
     }
 }
 
@@ -51,12 +57,12 @@ function pkg_calculation(cps, spp, wpp, unit_pp, cpp_id) {
     } else {
         var cal_p_pkg = cps * spp;
         var lb_p_pkg = wpp / unit_pp;
-        $(cpp_id).val(cal_p_pkg / lb_p_pkg);
+        setElementValue(cpp_id, cal_p_pkg / lb_p_pkg);
     }
 }
 
 function wgt_calculation(cpw, cp_unit, cpp_id) {
-    $(cpp_id).val(cpw * cp_unit);
+    setElementValue(cpp_id, cpw * cp_unit)
 }
 
 function click_clear() {
