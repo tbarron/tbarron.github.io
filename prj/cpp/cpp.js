@@ -10,12 +10,6 @@ function cal_by_weight(cal_p_unit, unit_mult) {
 }
 
 function clear_elements(elist) {
-    var ename;
-    var idx;
-    for (idx = 0 ; idx < elist.length ; idx++) {
-        ename = elist[idx];
-        $(ename).val("");
-    }
 }
 
 function decide(cps, cpw) {
