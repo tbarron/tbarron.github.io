@@ -10,13 +10,14 @@ function cal_by_weight(cal_p_unit, unit_mult) {
 }
 
 function clear_elements(elist) {
+    for (var idx = 0 ; idx < elist.length ; idx++) {
         setElementValue(elist[idx], "");
     }
 }
 
 function instruct() {
     msg = "Please fill in the first three fields or"
-        + " the cal per ounce/gram field";
+        + " the cal per ounce/gram field with numbers";
     alert(msg);
 }
 
