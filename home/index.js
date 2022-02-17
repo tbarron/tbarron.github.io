@@ -17,7 +17,6 @@ function show_update() {
     // CSS update
     let css = document.getElementsByClassName("cssmeta");
     if (0 < css.length) {
-        console.log("cssmeta items found: ", css.length);
         let style = window.getComputedStyle(css[0], null);
         css_upd = clean(style.getPropertyValue("--updated"));
     } else {
