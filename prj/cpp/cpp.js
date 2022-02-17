@@ -69,14 +69,29 @@ function click_clear() {
     clear_elements(["cps", "spp", "wpp", "cpw", "cpp"]);
 }
 
+function getFloatValue(element) {
+    var el = document.getElementById(element);
+    var zz;
+    if (null !== el.value) {
+        zz = el.value;
+    } else if (null !== el.innerHTML) {
+        zz = el.innerHTML;
+    } else {
+        zz = "";
+    }
+
+    var rv = parseFloat(zz);
+    return rv;
+}
+
 function click_calculate() {
-    var cps = parseFloat($("#cps").val());
-    var cpw = parseFloat($("#cpw").val());
-    var spp = parseFloat($("#spp").val());
-    var wpp = parseFloat($("#wpp").val());
-    var cpw = parseFloat($("#cpw").val());
-    var unit_pp = parseFloat($("#unit_pp").val());
-    var cp_unit = parseFloat($("#cp_unit").val());
+    var cps = getFloatValue("cps");
+    var cpw = getFloatValue("cpw");
+    var spp = getFloatValue("spp");
+    var wpp = getFloatValue("wpp");
+    var cpw = getFloatValue("cpw");
+    var unit_pp = getFloatValue("unit_pp");
+    var cp_unit = getFloatValue("cp_unit");
 
     switch (decide(cps, cpw)) {
     case 0:
