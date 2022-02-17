@@ -60,7 +60,7 @@ function wgt_calculation(cpw, cp_unit, cpp_id) {
 }
 
 function click_clear() {
-    clear_elements(["#cps", "#spp", "#wpp", "#cpw", "#cpp"]);
+    clear_elements(["cps", "spp", "wpp", "cpw", "cpp"]);
 }
 
 function click_calculate() {
