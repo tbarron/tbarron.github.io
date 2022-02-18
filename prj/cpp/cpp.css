@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0217 12:24:21>";
+    --updated: "<2022.0217 19:05:16>";
 }
 
 *{
@@ -36,6 +36,7 @@ body {
     background-color: lightyellow;
 }
 
+
 #cpp-desc {
     grid-column: 2;
     // grid-row: 1;
@@ -58,6 +59,17 @@ body {
 #cpp-buttons {
     background-color: lightyellow;
     padding: 15px;
+}
+
+#cn-title {
+    background-color: lightyellow;
+    grid-column-start: 2;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cn-para {
+    margin-bottom: 10px;
 }
 
 ul {
