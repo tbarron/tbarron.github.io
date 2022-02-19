@@ -19,8 +19,8 @@ body {
     // height: 98vh;
 }
 
-.matrix {
-//    grid-column: 1/-2;
+.text {
+    grid-column: 2 / span 10;
 }
 
 .oview {
@@ -43,6 +43,10 @@ body {
     //height: 1vh;
     grid-column-start: span 4;
     grid-row-start: span 3;
+}
+
+.dt-bullet {
+    margin-bottom: 1em;
 }
 
 .gravimg {
@@ -124,10 +128,6 @@ body {
 .panel {
     height: 100%;
     width: 100%;
-}
-
-.text {
-    grid-column: 2 / span 10;
 }
 
 .tiny {
