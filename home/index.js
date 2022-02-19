@@ -1,5 +1,5 @@
 window.onload = show_update;
-var js_update = "Updated: <2022.0217 12:24:11>";
+var js_update = "Updated: <2022.0218 15:28:02>";
 
 function clean(s) {
     let tmp = s.replace(/(Updated: |[<>"])/g, "");
