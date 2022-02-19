@@ -98,6 +98,18 @@ body {
     //border: solid black 1px;
 }
 
+.needswork {
+    background-color: yellow;
+}
+
+.lupdate {
+    background-color: pink;
+}
+
+.working {
+    background-color: lightgreen;
+}
+
 .commit {
     grid-column: 1 / span 12;
     margin-right: 10px;
