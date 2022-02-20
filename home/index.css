@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0220 08:20:03>";
+    --updated: "<2022.0220 10:12:59>";
 }
 
 body {
@@ -104,6 +104,18 @@ body {
 
 .lupdate {
     background-color: pink;
+}
+
+.needsjava {
+    background-color: brown;
+}
+
+.needscss {
+    background-color: orange;
+}
+
+.needs-content {
+    background-color: cyan;
 }
 
 .working {
