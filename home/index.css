@@ -115,11 +115,12 @@ body {
 
 .commit {
     grid-column: 1 / span 12;
-    margin-right: 10px;
-    margin-top: 10px;
+    padding: 10px;
     justify-self: right;
     text-align: right;
     font-size: small;
+    background-color: lightgreen;
+    border-radius: 5px;
 }
 
 .panel {
