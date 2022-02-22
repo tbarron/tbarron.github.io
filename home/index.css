@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0222 07:39:11>";
+    --updated: "<2022.0222 08:11:13>";
 }
 
 body {
@@ -102,11 +102,6 @@ body {
 /* the app needs attention of some kind */
 .needswork {
     background-color: yellow;
-}
-
-/* last update block has been added to app */
-.lupdate {
-    background-color: pink;
 }
 
 /* add a js file for the app */
