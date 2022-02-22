@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0222 07:25:29>";
+    --updated: "<2022.0222 07:30:14>";
 }
 
 body {
@@ -39,6 +39,7 @@ body {
     margin: 2px;
     grid-column-start: span 4;
     grid-row-start: span 3;
+    background-color: lightgreen;
 }
 
 .dt-bullet {
