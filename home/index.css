@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0220 10:33:23>";
+    --updated: "<2022.0222 07:07:55>";
 }
 
 body {
@@ -120,6 +120,14 @@ body {
 
 .needs-blktrg {
     background-color: goldenrod;
+}
+
+.needs-ndesc {
+    background-color: chocolate;
+}
+
+.needs-nfmt {
+    background-color: gray;
 }
 
 .working {
