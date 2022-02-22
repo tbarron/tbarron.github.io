@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0222 07:30:14>";
+    --updated: "<2022.0222 07:39:11>";
 }
 
 body {
@@ -99,44 +99,49 @@ body {
     //border: solid black 1px;
 }
 
+/* the app needs attention of some kind */
 .needswork {
-    background-color: yellow;   // the app needs attention of some kind
+    background-color: yellow;
 }
 
+/* last update block has been added to app */
 .lupdate {
-    background-color: pink;    // last update block has been added to app
+    background-color: pink;
 }
 
+/* add a js file for the app */
 .needsjava {
-    background-color: brown;    // add a js file for the app
+    background-color: brown;
 }
 
+/* add a css file for the app */
 .needscss {
-    background-color: orange;    // add a css file for the app
+    background-color: orange;
 }
 
+/* add content to the app */
 .needs-content {
-    background-color: cyan;      // add content to the app
+    background-color: cyan;
 }
 
+/* make link target="_blank" */
 .needs-blktrg {
-    background-color: goldenrod;   // make link target="_blank"
+    background-color: goldenrod;
 }
 
+/* describe app in notes */
 .needs-ndesc {
-    background-color: chocolate;   // describe app in notes
+    background-color: chocolate;
 }
 
+/* use notes-specific formatting */
 .needs-nfmt {
-    background-color: gray;   // use notes-specific formatting
+    background-color: gray;
 }
 
+/* format tab title like "Notes: app-name" */
 .needs-ntt {
-    background-color: lightgray; // format tab title like "Notes: cpp"
-}
-
-.working {
-    background-color: lightgreen;
+    background-color: lightgray;
 }
 
 .commit {
