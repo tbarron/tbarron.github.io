@@ -129,6 +129,9 @@ body {
 .needs-nfmt {
     background-color: gray;   // use notes-specific formatting
 }
+
+.needs-ntt {
+    background-color: lightgray; // format tab title like "Notes: cpp"
 }
 
 .working {
