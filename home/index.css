@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0222 15:50:33>";
+    --updated: "<2022.0222 16:14:01>";
 }
 
 body {
@@ -112,11 +112,6 @@ body {
 /* make link target="_blank" */
 .needs-blktrg {
     background-color: goldenrod;
-}
-
-/* describe app in notes */
-.needs-ndesc {
-    background-color: chocolate;
 }
 
 /* format tab title like "Notes: app-name" */
