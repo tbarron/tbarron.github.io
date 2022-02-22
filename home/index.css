@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0222 08:28:10>";
+    --updated: "<2022.0222 15:50:33>";
 }
 
 body {
@@ -117,11 +117,6 @@ body {
 /* describe app in notes */
 .needs-ndesc {
     background-color: chocolate;
-}
-
-/* use notes-specific formatting */
-.needs-nfmt {
-    background-color: gray;
 }
 
 /* format tab title like "Notes: app-name" */
