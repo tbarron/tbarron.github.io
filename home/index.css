@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0222 08:17:17>";
+    --updated: "<2022.0222 08:28:10>";
 }
 
 body {
@@ -102,11 +102,6 @@ body {
 /* the app needs attention of some kind */
 .needswork {
     background-color: yellow;
-}
-
-/* add a css file for the app */
-.needscss {
-    background-color: orange;
 }
 
 /* add content to the app */
