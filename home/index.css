@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0222 07:07:55>";
+    --updated: "<2022.0222 07:25:29>";
 }
 
 body {
@@ -168,10 +168,6 @@ body {
 }
 
 /* Notes formatting */
-
-.nformat {
-    background-color: red;
-}
 
 .nt-container {
     display: grid;
