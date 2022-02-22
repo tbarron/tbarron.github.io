@@ -99,35 +99,36 @@ body {
 }
 
 .needswork {
-    background-color: yellow;
+    background-color: yellow;   // the app needs attention of some kind
 }
 
 .lupdate {
-    background-color: pink;
+    background-color: pink;    // last update block has been added to app
 }
 
 .needsjava {
-    background-color: brown;
+    background-color: brown;    // add a js file for the app
 }
 
 .needscss {
-    background-color: orange;
+    background-color: orange;    // add a css file for the app
 }
 
 .needs-content {
-    background-color: cyan;
+    background-color: cyan;      // add content to the app
 }
 
 .needs-blktrg {
-    background-color: goldenrod;
+    background-color: goldenrod;   // make link target="_blank"
 }
 
 .needs-ndesc {
-    background-color: chocolate;
+    background-color: chocolate;   // describe app in notes
 }
 
 .needs-nfmt {
-    background-color: gray;
+    background-color: gray;   // use notes-specific formatting
+}
 }
 
 .working {
