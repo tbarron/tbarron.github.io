@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0222 16:26:01>";
+    --updated: "<2022.0223 07:25:49>";
 }
 
 body {
@@ -99,19 +99,9 @@ body {
     //border: solid black 1px;
 }
 
-/* the app needs attention of some kind */
-.needswork {
-    background-color: yellow;
-}
-
 /* add content to the app */
 .needs-content {
     background-color: cyan;
-}
-
-/* make link target="_blank" */
-.needs-blktrg {
-    background-color: goldenrod;
 }
 
 .commit {
