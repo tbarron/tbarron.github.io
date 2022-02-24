@@ -67,8 +67,36 @@ function groz_compute() {
         result = wgt_calculation(cpw, cp_unit);
         setElementValue("cpp", result);
     }
+}
 
-    setFocus("cps");
+/* ----------------------------------------------------------------------
+ * Return true if all of the pink fields contain a numeric value
+ */
+function pinkReady() {
+    var cps = getFloatValue("cps");
+    var spp = getFloatValue("spp");
+    var wpp = getFloatValue("wpp");
+    var unit_pp = getFloatValue("unit_pp");
+
+    if (isNaN(cps) || isNaN(spp) || isNaN(wpp) || isNaN(unit_pp)) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+/* ----------------------------------------------------------------------
+ * Return true if the blue field contains a numeric value
+ */
+function blueReady() {
+    var cpw = getFloatValue("cpw");
+    var cp_unit = getFloatValue("cp_unit");
+
+    if (isNaN(cpw) || isNaN(cp_unit)) {
+        return false;
+    } else {
+        return true;
+    }
 }
 
 /* ----------------------------------------------------------------------
