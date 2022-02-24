@@ -33,7 +33,64 @@
         </ul>
       </div>
 
+      <div class="cpp-content">
+        <div id="pkg" class="master">
+
+          <!-- calories per serving -->
+          <label class="cpp_label fields">calories per serving:</label>
+          <div class="fields">
+            <input class="cpp_input" type="text" id="cps" onfocusout="pkg_compute()"
+                   tabindex=1>
+          </div>
+
+          <!-- servings per package -->
+          <label class="cpp_label fields">servings per package:</label>
+          <div class="fields">
+            <input class="cpp_input" type="text" id="spp"
+                   onfocusout="pkg_compute()" tabindex=2>
+          </div>
+
+          <!-- ounces/grams per package -->
+          <label class="cpp_label fields">
+            <select id="unit_pp" tabindex=0 onchange="pkg_sel_done()">
+              <option value="16">ounces</option>
+              <option value="453.6">grams</option>
+            </select> per package:
+          </label>
+          <div class="fields">
+            <input class="cpp_input" type="text" id="wpp"
+                   onchange="pkg_compute()" tabindex=3>
+          </div>
+
+        </div> <!-- id="pkg" -->
+
+        <div id="wgt" class="master">
+          <!-- calories per ounces/grams -->
+          <label class="cpp_label fields">calories per
+            <select id="cp_unit" tabindex=0 onmouseup="groz_sel_done()">
               <option value="16">ounce</option>
               <option value="453.6">gram</option>
+            </select>:
+          </label>
+          <div class="fields">
+            <input class="cpp_input" type="text" id="cpw"
+                   onfocusout="groz_compute()" tabindex=4>
+          </div>
+        </div> <!-- id="wgt" -->
+
+        <div id="plb" class="master">
+          <!-- calories per pound -->
+          <label class="cpp_label fields">calories per pound:</label>
+          <div class="fields">
+            <input class="cpp_input" type="text" id="cpp" readonly>
+          </div>
+        </div> <!-- id="plb" -->
+      </div> <!-- class="cpp-content" -->
+
+      <div class="cpp-buttons">
+        <button id="b_reset" type="button" onclick="resetFields()">Reset</button>
+      </div>
+
+    </div> <!-- class="cpp-container" -->
   </body>
 </html>
