@@ -1,7 +1,8 @@
 :root {
-    --updated: "<2022.0217 19:05:16>";
+    --updated: "<2022.0223 20:16:09>";
 }
 
+/* Reset to factory defaults (more or less) */
 *{
     margin: 0px;
     padding: 0px;
@@ -10,7 +11,6 @@
 
 body {
     font-family: sans-serif;
-    // font-size: 20px;
     width: 100%;
     min-height: 100vh;
     background-color: lightyellow;
@@ -21,14 +21,58 @@ body {
     gap: 20p;
     grid-template-columns: 15% auto 15%;
     background-color: lightyellow;
-    // grid-template-rows: 200 auto auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .cpp-content {
-    // background-color: skyblue;
-    //display: grid;
-    // place-items: center;
     grid-column-start: 2;
+    padding: 5px;
+}
+
+.cpp-buttons {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    margin: auto;
+    padding: 15px;
+}
+
+#b_reset {
+    width: 8em;;
+    border-radius: 5px;
+    background-color: lightgreen;
+    padding: 5px;
+}
+
+.master {
+    display: grid;
+    grid-template-columns: auto 50%;
+    padding: 5px;
+}
+
+#pkg {
+    background-color: pink;
+    border-radius: 5px 5px 0 0;
+}
+
+#wgt {
+    background-color: skyblue;
+}
+
+#plb {
+    background-color: lavender;
+    border-radius: 0 0 5px 5px;
+}
+
+.cpp_label {
+    grid-column-start: 1;
+}
+
+.cpp_input {
+    grid-column-start: 2;
+}
+
+.fields {
     padding: 5px;
 }
 
@@ -36,40 +80,13 @@ body {
     background-color: lightyellow;
 }
 
-
 #cpp-desc {
     grid-column: 2;
-    // grid-row: 1;
     background-color: cream;
 }
 
-#cpp-inputs {
-    // grid-row: 2;
-    background-color: pink;
-}
-
-#cpp-cpog {
-    background-color: skyblue;
-}
-
-#cpp-cplb {
-    background-color: lavender;
-}
-
-#cpp-buttons {
-    background-color: lightyellow;
-    padding: 15px;
-}
-
-#cn-title {
-    background-color: lightyellow;
-    grid-column-start: 2;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.cn-para {
-    margin-bottom: 10px;
+#unit_pp {
+    width: 75px;
 }
 
 ul {
