@@ -1,9 +1,14 @@
-var js_update = "Updated: <2022.0217 12:24:34>"
+var js_update = "Updated: <2022.0223 20:10:04>"
 
 function setElementValue(id, val) {
     var el = document.getElementById(id);
     el.value = val;
     el.innerHTML = val;
+}
+
+function setFocus(id) {
+    var el = document.getElementById(id);
+    el.focus();
 }
 
 function cal_by_weight(cal_p_unit, unit_mult) {
@@ -34,7 +39,7 @@ function hell_frozen() {
     alert("Hell has frozen over");
 }
 
-function pkg_calculation(cps, spp, wpp, unit_pp, cpp_id) {
+function pkg_calculation(cps, spp, wpp, unit_pp) {
     if (isNaN(spp)) {
         request_spp();
     } else if (isNaN(wpp)) {
@@ -42,12 +47,13 @@ function pkg_calculation(cps, spp, wpp, unit_pp, cpp_id) {
     } else {
         var cal_p_pkg = cps * spp;
         var lb_p_pkg = wpp / unit_pp;
-        setElementValue(cpp_id, cal_p_pkg / lb_p_pkg);
+        // setElementValue(cpp_id, cal_p_pkg / lb_p_pkg);
+        return cal_p_pkg / lb_p_pkg;
     }
 }
 
-function wgt_calculation(cpw, cp_unit, cpp_id) {
-    setElementValue(cpp_id, cpw * cp_unit)
+function wgt_calculation(cpw, cp_unit) {
+    return cpw * cp_unit;
 }
 
 function click_clear() {
@@ -87,4 +93,50 @@ function click_calculate() {
     } else {
         hell_frozen();
     }
+}
+
+function pkg_sel_done() {
+    var el = document.getElementById("wpp");
+    el.focus();
+}
+
+function groz_sel_done() {
+    var el = document.getElementById("cpw");
+    el.focus();
+}
+
+function groz_compute() {
+    var cpw = getFloatValue("cpw");
+    var cp_unit = getFloatValue("cp_unit");
+
+    if (!isNaN(cpw)) {
+        result = wgt_calculation(cpw, cp_unit);
+        setElementValue("cpp", result);
+    }
+
+    setFocus("cps");
+}
+
+function pkg_compute() {
+    var cps = getFloatValue("cps");
+    var spp = getFloatValue("spp");
+    var wpp = getFloatValue("wpp");
+    var unit_pp = getFloatValue("unit_pp");
+    
+    if (isNaN(cps) || isNaN(spp) || isNaN(wpp)) {
+        return;
+    }
+
+    var result = pkg_calculation(cps, spp, wpp, unit_pp);
+
+    setElementValue("cpp", result);
+}
+
+function resetFields() {
+    setElementValue("cps", "");
+    setElementValue("spp", "");
+    setElementValue("wpp", "");
+    setElementValue("cpw", "");
+    setElementValue("cpp", "");
+    setFocus("cps");
 }
