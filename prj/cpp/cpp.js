@@ -1,4 +1,16 @@
 var js_update = "Updated: <2022.0224 06:37:48>"
+/* ----------------------------------------------------------------------
+ * If the user presses Enter, attempt to calculate a result
+ */
+function keyHandler(e) {
+    if ("Enter" == e.code) {
+        if (pinkReady()) {
+            pkg_compute();
+        } else if (blueReady()) {
+            groz_compute();
+        }
+    }
+}
 
 /* ----------------------------------------------------------------------
  * Manage calling pkg_calculation. This function is called from the
