@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <script id="updated">Updated: "2022.0222 07:46:10"</script>
+  <script id="updated">Updated: "2022.0224 12:10:20"</script>
   <head>
     <title>Notes: cpp</title>
     <div class="cssmeta" hidden></div>
@@ -22,6 +22,59 @@
           from PA::tusculum and potential improvements to be made (eg., the idea
           of triggering calculations by losing focus on the input fields rather
           than by having to click a button)
+
+        <h3>2022.0224</h3>
+
+        <p class="nt-para">It seems cumbersome to force the user to move and
+          press a "calculate" each time they want to compute a result. So I'm
+          experimenting with triggering the calculation when control leaves the
+          input fields.
+
+        <p class="nt-para">When control leaves a field, we check whether enough
+          info has been entered, and if so, we go ahead and run the appropriate
+          calculation. That is,
+
+          <pre>
+            if the pink fields are full
+               pkg_calculation()
+            else if blue field has value
+               wgt_calculation()
+            else
+               do nothing
+          </pre>
+
+          <p class="nt-para">So, the pink fields take precedence if both sets
+            are filled in.
+
+          <p class="nt-para">However, while this streamlines the operation for
+            users who know what they are doing, it makes the computational
+            trigger non-obvious, which may make trouble for users who don't
+            realize that leaving the input fields trigger the calculation.
+
+          <p class="nt-para">One way to help this might be to trigger the
+            calculation when the user presses Enter. So I tried adding
+            <i>onkeypress</i> as an event on the "body" element in the HTML
+            file. That worked fine, but it didn't let me snag the event to see
+            which key was pressed, so the code was reacting to every key press.
+            Not what I wanted.
+
+          <p class="nt-para">So I looked into adding a listener for
+            the <i>keypress</i> event. It turns out that <i>keypress</i> has
+            been deprecated in favor of <i>keydown</i> (per <a target="_blank"
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event">
+            this page</a>), so I switched over to that.
+
+          <p class="nt-para">So far so good, but the current focus cycle just
+            ranges over the four input fields. The user can enter values and
+            perform computations from the keyboard, but they can't reset the
+            fields without resorting to the mouse.
+
+          <p class="nt-para">So let's add Reset to the focus cycle. I thought
+            this meant I'd need to have the keyboard listener notice which
+            element focus was sitting on when Enter is pressed to do the field
+            reset if we happen to be on the Reset button, however it turns out
+            that the default behavior in this case is just what is desired. So
+            no special measures appear to be needed.
       </div>
     </div>
   </body>
