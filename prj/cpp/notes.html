@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <script id="updated">Updated: "2022.0226 09:45:27"</script>
+  <script id="updated">Updated: "2022.0226 10:50:53"</script>
   <head>
     <title>Notes: cpp</title>
     <div class="cssmeta" hidden></div>
@@ -83,21 +83,36 @@
             event to call show_update() coded in index.js, so our cpp pages were
             not getting the lupdate display.
 
-          <p class="nt-para">The solution, for now, was to have the load handler
-            in cpp.js add the keyboard listener, then call show_update() as
-            well.
+          <p class="nt-para">The simple, unscalable, solution was to have the
+            load handler in cpp.js (initialize()) add the keyboard listener,
+            then also call show_update().
 
           <p class="nt-para">A better solution would be to find a way to build a
             list of load handlers. I looked for a way to do this as part of JS,
             but there doesn't appear to be one.
-            However, <a href="https://tinyurl.com/f2ptrfws">
-            htmlgoodies.com </a> offers a solution -- the function
+
+          <p class="nt-para">However, <a href="https://tinyurl.com/f2ptrfws">
+            htmlgoodies.com </a> does offer a solution -- the function
             addLoadEvent(). Trying it in cpp.js now.
 
           <p class="nt-para">That is, I'm going to put the code for
              addLoadEvent() in index.js, use it there to install show_update()
              as a load handler, then call addLoadEvent() in cpp.js to add
              initialize() as a load handler and we'll see what we get.
+
+          <p class="nt-para">And... it works great! I decided to call the
+            function addLoadHandler() (instead of addLoadEvent). I can even call
+            addLoadHandler() in index.js before it is defined, which surprises
+            me, but makes it easy to put the load handler call right at the top
+            of the file. Also, it works to code the handler function directly in
+            the call to addLoadHandler(), rather than having to make the handler
+            a separate, stand-alone function. For example,
+
+            <pre>
+   addLoadHandler(function () {
+     document.addEventListener("keydown", keyHandler);
+   })
+            </pre>
 
           <p class="nt-para">
 
