@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <script id="updated">Updated: "2022.0224 12:13:19"</script>
+  <script id="updated">Updated: "2022.0226 09:45:27"</script>
   <head>
     <title>Notes: cpp</title>
     <div class="cssmeta" hidden></div>
@@ -75,6 +75,32 @@
             reset if we happen to be on the Reset button, however it turns out
             that the default behavior in this case is just what is desired. So
             no special measures appear to be needed.
+
+          <h4>2022.0226 09:30</h4>
+
+          <p class="nt-para">To add a keyboard listener, we used window.onload
+            in cpp.js to call initialize(). However, this masked the onload
+            event to call show_update() coded in index.js, so our cpp pages were
+            not getting the lupdate display.
+
+          <p class="nt-para">The solution, for now, was to have the load handler
+            in cpp.js add the keyboard listener, then call show_update() as
+            well.
+
+          <p class="nt-para">A better solution would be to find a way to build a
+            list of load handlers. I looked for a way to do this as part of JS,
+            but there doesn't appear to be one.
+            However, <a href="https://tinyurl.com/f2ptrfws">
+            htmlgoodies.com </a> offers a solution -- the function
+            addLoadEvent(). Trying it in cpp.js now.
+
+          <p class="nt-para">That is, I'm going to put the code for
+             addLoadEvent() in index.js, use it there to install show_update()
+             as a load handler, then call addLoadEvent() in cpp.js to add
+             initialize() as a load handler and we'll see what we get.
+
+          <p class="nt-para">
+
       </div>
     </div>
   </body>
