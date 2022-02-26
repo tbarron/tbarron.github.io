@@ -1,5 +1,20 @@
-window.onload = show_update;
-var js_update = "Updated: <2022.0218 15:28:02>";
+var js_update = "Updated: <2022.0226 10:40:02>";
+
+function addLoadHandler(funcname) {
+    var current = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = funcname;
+    } else {
+        window.onload = function () {
+            if (current) {
+                current();
+            }
+            funcname();
+        }
+    }
+}
+
+addLoadHandler(show_update);
 
 function clean(s) {
     let tmp = s.replace(/(Updated: |[<>"])/g, "");
