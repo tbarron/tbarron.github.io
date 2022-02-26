@@ -1,12 +1,11 @@
-var js_update = "Updated: <2022.0224 12:08:38>"
-window.onload = initialize;
+var js_update = "Updated: <2022.0226 10:35:53>"
 
 /* ----------------------------------------------------------------------
- * Set up a keyboard event listener to catch Enter keypress
+ * Add load handler (see index.js) to hook the keydown event
  */
-function initialize() {
+addLoadHandler(function () {
     document.addEventListener("keydown", keyHandler);
-}
+})
 
 /* ----------------------------------------------------------------------
  * If the user presses Enter, attempt to calculate a result
