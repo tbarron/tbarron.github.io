@@ -1,7 +1,11 @@
-var js_update = "Updated: <2022.0226 10:44:28>";
+var js_update = "Updated: <2022.0226 10:55:19>";
 
 addLoadHandler(show_update);
 
+/* ----------------------------------------------------------------------
+ * Add a load handler to the stack so they all get run once loading is
+ * complete
+ */
 function addLoadHandler(funcname) {
     var current = window.onload;
     if (typeof window.onload != 'function') {
@@ -16,11 +20,17 @@ function addLoadHandler(funcname) {
     }
 }
 
+/* ----------------------------------------------------------------------
+ * Remove everything except the timestamp from the lupdate payload
+ */
 function clean(s) {
     let tmp = s.replace(/(Updated: |[<>"])/g, "");
     return tmp;
 }
 
+/* ----------------------------------------------------------------------
+ * Add the lupdate info for HTML, CSS, and JS at the bottom of the page
+ */
 function show_update() {
     let css_upd;
 
