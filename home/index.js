@@ -1,4 +1,4 @@
-var js_update = "Updated: <2022.0226 10:55:19>";
+var js_update = "Updated: <2022.0226 12:34:47>";
 
 addLoadHandler(show_update);
 
@@ -78,4 +78,13 @@ function show_update() {
     target = document.getElementById("last_update");
     target.value = result;
     target.innerHTML = result;
+}
+
+/* ----------------------------------------------------------------------
+ * Given an element *id*, set that element to *value*.
+ */
+function setElementValue(id, val) {
+    var el = document.getElementById(id);
+    el.value = val;
+    el.innerHTML = val;
 }
