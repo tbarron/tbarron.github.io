@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<script id="updated">Updated: "2022.0220 10:09:54"</script>
+<script id="updated">Updated: "2022.0226 15:31:54"</script>
 <html>
   <head>
   <meta charset="UTF-8">
@@ -14,6 +14,36 @@
     <link rel="shorcut icon" href="data:image/x-icon" type="image/x-icon" />
   </head>
   <body>
-    <center><h1>prj/life/life.html needs work!</h1></center>
+    <!-- <center><h1>prj/life/life.html needs work!</h1></center> -->
+    <div id="container">
+      <div id="controls">
+        <button id="stopgo" onclick="thing.gostop()">[]</button>
+        <select id="starts" onchange="thing.configure()">
+          <option value="clear">clear</option>
+          <option value="acorn">acorn</option>
+          <option value="diehard">diehard</option>
+          <option value="glider">glider</option>
+          <option value="gun">glider gun</option>
+          <option value="puff">dragon egg</option>
+          <option value="random">random</option>
+          <option value="r-pentomino">r-pentomino</option>
+          <option value="ship">spaceship</option>
+        </select>
+        <button id="step"   onclick="step_click()">Step</button>
+        <!-- <button id="stopgo"   onclick="stopgo_click()">[]</button> -->
+        <!-- Interval:
+        <input id="interval" value="100" onfocusout="interval_set()"/> -->
+        <button id="sclabel"
+                onmouseover="thing.sc.mouseover()"
+                onmouseout="thing.sc.mouseout()"
+                onclick="thing.sc.click()">Steps:</button>
+        <input id="stepcount" type="text" value="0"/>
+        <input id="rxc" onclick="rxc_click()" type="text"/>
+      </div>
+
+      <canvas id="canvas">
+      </canvas>
+    </div>
+
   </body>
 </html>
