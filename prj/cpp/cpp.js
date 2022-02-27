@@ -1,4 +1,4 @@
-var js_update = "Updated: <2022.0226 10:35:53>"
+var js_update = "Updated: <2022.0226 12:34:36>"
 
 /* ----------------------------------------------------------------------
  * Add load handler (see index.js) to hook the keydown event
@@ -184,4 +184,3 @@ function getFloatValue(element) {
     var rv = parseFloat(zz);
     return rv;
 }
-
