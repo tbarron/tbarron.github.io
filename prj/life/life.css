@@ -1,3 +1,46 @@
 :root {
-    --updated: "<2022.0219 07:17:02>";
+    --updated: "<2022.0226 15:28:00>";
+}
+
+#container {
+    display: grid;
+}
+
+#controls {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#stopgo {
+    width: auto;
+}
+
+#step {
+    width: auto;
+}
+
+#sclabel {
+    width: 75px;
+}
+
+#clear {
+    width: 100px;
+}
+
+#rxc {
+    border: none;
+}
+
+#stepcount {
+    border: none;
+}
+
+#grid {
+    border: 1;
+    border-collapse: collapse;
+}
+
+#canvas {
+    width: 100%;
+    border: 1px solid black;
 }
