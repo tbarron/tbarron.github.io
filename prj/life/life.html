@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<script id="updated">Updated: "2022.0226 15:31:54"</script>
+<script id="updated">Updated: "2022.0227 10:03:30"</script>
 <html>
   <head>
   <meta charset="UTF-8">
@@ -17,7 +17,7 @@
     <!-- <center><h1>prj/life/life.html needs work!</h1></center> -->
     <div id="container">
       <div id="controls">
-        <button id="stopgo" onclick="thing.gostop()">[]</button>
+        <button id="stopgo" onclick="thing.gostop()">Run</button>
         <select id="starts" onchange="thing.configure()">
           <option value="clear">clear</option>
           <option value="acorn">acorn</option>
@@ -29,7 +29,7 @@
           <option value="r-pentomino">r-pentomino</option>
           <option value="ship">spaceship</option>
         </select>
-        <button id="step"   onclick="step_click()">Step</button>
+        <button id="step"   onclick="thing.iterate()">Step</button>
         <!-- <button id="stopgo"   onclick="stopgo_click()">[]</button> -->
         <!-- Interval:
         <input id="interval" value="100" onfocusout="interval_set()"/> -->
