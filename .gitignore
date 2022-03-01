@@ -2,6 +2,7 @@
 DODO
 _site
 _attic
+_tsc
 *.lock
 *~
 pypi.cfg
