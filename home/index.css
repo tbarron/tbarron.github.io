@@ -1,9 +1,15 @@
 :root {
-    --updated: "<2022.0223 07:25:49>";
+    --updated: "<2022.0305 11:34:36>";
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: lightyellow;
 }
 
 .centext {
@@ -52,6 +58,7 @@ body {
 
 .lgrav {
     grid-column: 1 / 2;
+    margin: 5px;
 }
 
 .title {
@@ -65,6 +72,7 @@ body {
 .rgrav {
     grid-column: -2 / -1;
     justify-self: right;
+    margin: 5px;
 }
 
 .writing {
