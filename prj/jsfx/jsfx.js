@@ -1,4 +1,9 @@
 var js_update = "Updated: <2022.0410 19:32:20>"
+function element(name) {
+    var rv = document.getElementById(name);
+    return rv;
+}
+
 
 function holdColor() {
     var elm = document.getElementById("which_color");
