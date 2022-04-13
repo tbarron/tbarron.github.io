@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0306 09:57:00>";
+    --updated: "<2022.0413 14:03:31>";
 }
 
 * {
@@ -166,4 +166,12 @@ body {
 
 .nt-para {
     margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+dt {
+    font-weight: bold;
 }
