@@ -33,3 +33,17 @@ function resetColor() {
     var body = document.getElementsByTagName("body")[0];
     body.style.background = "lightyellow";
 }
+
+function wHeight() {
+    var rv;
+    if (typeof window.innerHeight != 'undefined') {
+        rv = window.innerHeight;
+    } else if (typeof document.documentElement != 'undefined'
+               && typeof document.documentElement.clientHeight != 'undefined'
+               && document.documentElement.clientHeight != 0) {
+        rv = document.documentElement.clientHeight;
+    } else {
+        rv = document.getElementsByTagName('body')[0].clientHeight;
+    }
+    return rv;
+}
