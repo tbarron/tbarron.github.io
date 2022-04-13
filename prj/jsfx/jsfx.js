@@ -13,8 +13,14 @@ function start() {
 }
 
 function holdColor() {
-    var elm = document.getElementById("which_color");
+    var elm = element("which_color");
     console.log("element value: ", elm.value);
+
+    var above = element("above");
+    above.style.height = "" + wHeight() + "px";
+
+    var below = element("below");
+    below.style.height = "0px";
 
     var body = document.getElementsByTagName("body")[0];
     console.log(body);
