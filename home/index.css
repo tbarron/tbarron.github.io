@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0305 11:34:36>";
+    --updated: "<2022.0306 09:57:00>";
 }
 
 * {
@@ -63,6 +63,8 @@ body {
 
 .title {
     grid-column: 2 / -2;
+    // vertical-align: text-bottom;
+    margin-top: 1.5em;
 }
 
 .h1 {
