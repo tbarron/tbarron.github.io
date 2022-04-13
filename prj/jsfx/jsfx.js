@@ -1,9 +1,16 @@
 var js_update = "Updated: <2022.0410 19:32:20>"
+
+addLoadHandler(start);
+
 function element(name) {
     var rv = document.getElementById(name);
     return rv;
 }
 
+function start() {
+    var below = document.getElementById("below");
+    below.style.height = "" + (wHeight() - 120) + "px";
+}
 
 function holdColor() {
     var elm = document.getElementById("which_color");
