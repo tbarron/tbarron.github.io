@@ -1,9 +1,10 @@
 :root {
-    --updated: "<2022.0226 15:28:00>";
+    --updated: "<2022.0305 11:42:22>";
 }
 
 #container {
     display: grid;
+    margin: 5px;
 }
 
 #controls {
@@ -43,4 +44,5 @@
 #canvas {
     width: 100%;
     border: 1px solid black;
+    // margin: 5px;
 }

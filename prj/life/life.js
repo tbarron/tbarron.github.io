@@ -1,4 +1,4 @@
-var js_update = "Updated: <2022.0228 14:59:01>"
+var js_update = "Updated: <2022.0305 11:52:57>"
 
 addLoadHandler(startup)
 
@@ -25,6 +25,24 @@ class CV {
         this.next = "b";
         this.cfgs = ["clear", "acorn", "diehard", "glider", "gun", "puff",
                      "random", "r-pentomino", "ship"];
+    }
+
+    /* ------------------------------------------------------------------
+     * getComputedStyle of this.canvas
+     */
+    cps() {
+        return getComputedStyle(this.canvas);
+    }
+
+    /* ------------------------------------------------------------------
+     * Fix the fuzz
+     */
+    defuzz() {
+        let dpi = window.devicePixelRatio;
+        let w = this.cps().getPropertyValue('width').slice(0, -2);
+        let h = this.cps().getPropertyValue('height').slice(0, -2);
+        this.canvas.setAttribute('width', w * dpi);
+        this.canvas.setAttribute('height', h * dpi);
     }
 
     /* ------------------------------------------------------------------
@@ -218,6 +236,7 @@ class CV {
      */
     draw() {
         var mtx = this.output_matrix();
+        this.defuzz();
         // console.log("draw: mtx = ", mtx);
         for (var y = 0 ; y < this.height ; y++) {
             for (var x = 0 ; x < this.width ; x++) {
