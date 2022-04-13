@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<script id="updated">Updated: "2022.0222 13:14:01"</script>
+<script id="updated">Updated: "2022.0413 13:45:15"</script>
 <html>
   <head>
   <meta charset="UTF-8">
@@ -27,7 +27,113 @@
           notes-specific formatting from index.css.
 
         <p class="nt-para">This follow-up paragraph shows the separation
-          between paragraphs based on the 'nt-para' class.
+          between paragraphs based on the 'nt-para' class.</p>
+
+        <h3>2022.0306.n</h3>
+
+        <p class="nt-para">Here's how to get the size of the viewable browser
+          window in JS:
+
+          <pre>
+    function getViewport() {
+        var viewPortWidth;
+        var viewPortHeight;
+
+        // the more standards compliant browsers
+        // (mozilla/netscape/opera/IE7) use window.innerWidth and
+        // window.innerHeight
+
+        if (typeof window.innerWidth != 'undefined') {
+            viewPortWidth = window.innerWidth,
+            viewPortHeight = window.innerHeight
+        }
+
+        // IE6 in standards compliant mode (i.e. with a valid doctype as
+        // the first line in the document)
+        else if (typeof document.documentElement != 'undefined' &&
+                 typeof document.documentElement.clientWidth != 'undefined' &&
+                 document.documentElement.clientWidth != 0)
+            viewPortWidth = document.documentElement.clientWidth,
+            viewPortHeight = document.documentElement.clientHeight
+        }
+
+        // older versions of IE
+        else {
+            viewPortWidth = document.getElementsByTagName('body')[0].clientWidth,
+            viewPortHeight = document.getElementsByTagName('body')[0].clientHeight
+        }
+
+        return [viewPortWidth, viewPortHeight];
+    }
+          </pre>
+
+        <p class="nt-para">A simpler approach that lets us query width and
+          height independently, suitable for assignment to
+          &lt;element>.style.height, would be this:
+
+          <pre>
+    function windowHeight() {
+        var rv;
+
+        // the more standards compliant browsers
+        // (mozilla/netscape/opera/IE7) use window.innerWidth and
+        // window.innerHeight
+
+        if (typeof window.innerWidth != 'undefined') {
+            rv = window.innerHeight
+        }
+
+        // IE6 in standards compliant mode (i.e. with a valid doctype as
+        // the first line in the document)
+        else if (typeof document.documentElement != 'undefined' &&
+                 typeof document.documentElement.clientWidth != 'undefined' &&
+                 document.documentElement.clientWidth != 0)
+            rv = document.documentElement.clientHeight
+        }
+
+        // older versions of IE
+        else {
+            rv = document.getElementsByTagName('body')[0].clientHeight
+        }
+
+        return "" + rv + "px";
+    }
+
+    function windowWidth() {
+        var rv;
+
+        // the more standards compliant browsers
+        // (mozilla/netscape/opera/IE7) use window.innerWidth and
+        // window.innerHeight
+
+        if (typeof window.innerWidth != 'undefined') {
+            rv = window.innerWidth;
+        }
+
+        // IE6 in standards compliant mode (i.e. with a valid doctype as
+        // the first line in the document)
+        else if (typeof document.documentElement != 'undefined' &&
+                 typeof document.documentElement.clientWidth != 'undefined' &&
+                 document.documentElement.clientWidth != 0)
+            rv = document.documentElement.clientWidth;
+        }
+
+        // older versions of IE
+        else {
+            rv = document.getElementsByTagName('body')[0].clientWidth;
+        }
+
+        return "" + rv + "px";
+    }
+          </pre>
+
+
+
+        <p class="nt-para">Notice how we wrap the numeric result from the
+        document queries with a preceding "" and trailing "px", so the result
+        returned by windowHeight() and windowWidth() is a string of the form
+        "217px", not just a number.
+
       </div>
     </div>
   </body>
