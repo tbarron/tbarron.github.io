@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<script id="updated">Updated: "2022.0219 10:50:48"</script>
+<script id="updated">Updated: "2022.0410 19:28:50"</script>
 <html>
   <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <div class="cssmeta" hidden></div>
     <title>JSFX</title>
 
     <!-- CSS ============================================================== -->
     <link rel="stylesheet" type="text/css" href="../../home/index.css">
     <link rel="stylesheet" type="text/css" href="jsfx.css">
     <script src="../../home/index.js"></script>
-    <!-- <script src="jsfx.js"></script> -->
+    <script src="jsfx.js"></script>
     <!-- suppress favicon error -->
     <link rel="shorcut icon" href="data:image/x-icon" type="image/x-icon" />
   </head>
   <body>
-    <div class="cssmeta" hidden></div>
-    <center><h1>prj/jfsx/jfsx.html needs work!</h1></center>
+    <div id="container">
+
+      <div id="solid_color">
+        Solid color: 
+        <select id="which_color" onchange="holdColor()">
+          <option value="black">black</option>
+          <option value="green">green</option>
+          <option value="red">red</option>
+        </select>
+      </div>
+
+      <div id="page"></div>
+
+    </div>
+    <!-- <center><h1>prj/jfsx/jfsx.html needs work!</h1></center> -->
   </body>
 </html>
