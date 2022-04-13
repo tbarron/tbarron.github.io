@@ -1,5 +1,6 @@
 .env
 DODO
+boilerplate
 _site
 _attic
 _tsc
