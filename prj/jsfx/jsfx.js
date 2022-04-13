@@ -1,4 +1,4 @@
-var js_update = "Updated: <2022.0410 19:32:20>"
+var js_update = "Updated: <2022.0413 15:04:45>"
 
 addLoadHandler(start);
 
@@ -29,7 +29,17 @@ function holdColor() {
 }
 
 function resetColor() {
-    console.log("resetColor: ...")
+    console.log("resetColor: ...");
+
+    var above = element("above");
+    above.style.height = "0px";
+
+    var below = element("below");
+    below.style.height = "" + (wHeight() - 120) + "px";
+
+    var sel = element("which_color");
+    sel.value = "green";
+
     var body = document.getElementsByTagName("body")[0];
     body.style.background = "lightyellow";
 }
