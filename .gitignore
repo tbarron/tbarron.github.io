@@ -1,6 +1,10 @@
 .env
-DODO
+anom
 boilerplate
+cmd_shell
+dm
+DODO
+NOTES.local
 _site
 _attic
 _tsc
@@ -8,3 +12,4 @@ _tsc
 *~
 pypi.cfg
 .#*
+\#*
