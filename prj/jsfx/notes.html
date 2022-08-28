@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<script id="updated">Updated: "2022.0413 13:45:15"</script>
+<script id="updated">Updated: "2022.0828 14:55:01"</script>
 <html>
   <head>
   <meta charset="UTF-8">
@@ -34,33 +34,35 @@
         <p class="nt-para">Here's how to get the size of the viewable browser
           window in JS:
 
-          <pre>
+          <pre class="codewrap">
     function getViewport() {
         var viewPortWidth;
         var viewPortHeight;
+        var docel = document.documentElement;
 
         // the more standards compliant browsers
         // (mozilla/netscape/opera/IE7) use window.innerWidth and
         // window.innerHeight
 
         if (typeof window.innerWidth != 'undefined') {
-            viewPortWidth = window.innerWidth,
-            viewPortHeight = window.innerHeight
+            viewPortWidth = window.innerWidth;
+            viewPortHeight = window.innerHeight;
         }
 
-        // IE6 in standards compliant mode (i.e. with a valid doctype as
-        // the first line in the document)
-        else if (typeof document.documentElement != 'undefined' &&
-                 typeof document.documentElement.clientWidth != 'undefined' &&
+        // IE6 in standards compliant mode (i.e. with a valid
+        // doctype as the first line in the document)
+        else if (typeof docel != 'undefined' &&
+                 typeof docel.clientWidth != 'undefined' &&
                  document.documentElement.clientWidth != 0)
-            viewPortWidth = document.documentElement.clientWidth,
-            viewPortHeight = document.documentElement.clientHeight
+            viewPortWidth = document.documentElement.clientWidth;
+            viewPortHeight = document.documentElement.clientHeight;
         }
 
         // older versions of IE
         else {
-            viewPortWidth = document.getElementsByTagName('body')[0].clientWidth,
-            viewPortHeight = document.getElementsByTagName('body')[0].clientHeight
+            el = document.getElementsByTagname('body')[0];
+            viewPortWidth = el.clientWidth;
+            viewPortHeight = el.clientHeight;
         }
 
         return [viewPortWidth, viewPortHeight];
@@ -69,38 +71,42 @@
 
         <p class="nt-para">A simpler approach that lets us query width and
           height independently, suitable for assignment to
-          &lt;element>.style.height, would be this:
+          &lt;element>.style.{height|width}, would be this:
 
-          <pre>
+          <pre class="codewrap">
     function windowHeight() {
         var rv;
+        var docel = document.documentElement;
 
         // the more standards compliant browsers
         // (mozilla/netscape/opera/IE7) use window.innerWidth and
         // window.innerHeight
 
         if (typeof window.innerWidth != 'undefined') {
-            rv = window.innerHeight
+            rv = window.innerHeight;
         }
 
-        // IE6 in standards compliant mode (i.e. with a valid doctype as
-        // the first line in the document)
-        else if (typeof document.documentElement != 'undefined' &&
-                 typeof document.documentElement.clientWidth != 'undefined' &&
-                 document.documentElement.clientWidth != 0)
-            rv = document.documentElement.clientHeight
+        // IE6 in standards compliant mode (i.e. with a valid
+        // doctype as the first line in the document)
+        else if (typeof docel != 'undefined' &&
+                 typeof docel.clientWidth != 'undefined' &&
+                 docel.clientWidth != 0)
+            rv = docel.clientHeight;
         }
 
         // older versions of IE
         else {
-            rv = document.getElementsByTagName('body')[0].clientHeight
+            docel = document.getElementsByTagName('body')[0];
+            rv = docel.clientHeight;
         }
 
         return "" + rv + "px";
     }
-
+          </pre>
+          <pre class="codewrap">
     function windowWidth() {
         var rv;
+        var docel = document.documentElement;
 
         // the more standards compliant browsers
         // (mozilla/netscape/opera/IE7) use window.innerWidth and
@@ -110,17 +116,18 @@
             rv = window.innerWidth;
         }
 
-        // IE6 in standards compliant mode (i.e. with a valid doctype as
-        // the first line in the document)
-        else if (typeof document.documentElement != 'undefined' &&
-                 typeof document.documentElement.clientWidth != 'undefined' &&
-                 document.documentElement.clientWidth != 0)
-            rv = document.documentElement.clientWidth;
+        // IE6 in standards compliant mode (i.e. with a valid
+        // doctype as the first line in the document)
+        else if (typeof docel != 'undefined' &&
+                 typeof docel.clientWidth != 'undefined' &&
+                 docel.clientWidth != 0)
+            rv = docel.clientWidth;
         }
 
         // older versions of IE
         else {
-            rv = document.getElementsByTagName('body')[0].clientWidth;
+            docel = document.getElementsByTagName('body')[0];
+            rv = docel.clientWidth;
         }
 
         return "" + rv + "px";
@@ -132,7 +139,8 @@
         <p class="nt-para">Notice how we wrap the numeric result from the
         document queries with a preceding "" and trailing "px", so the result
         returned by windowHeight() and windowWidth() is a string of the form
-        "217px", not just a number.
+        "217px", not just a number. This is the format that
+        &lt;element>.style.height and &lt;element>.style.width expect.
 
       </div>
     </div>

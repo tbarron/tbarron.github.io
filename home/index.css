@@ -1,5 +1,5 @@
 :root {
-    --updated: "<2022.0413 14:03:31>";
+    --updated: "<2022.0828 14:53:06>";
 }
 
 * {
@@ -14,6 +14,15 @@ body {
 
 .centext {
     text-align: center;
+}
+
+.codewrap {
+    background-color: lightblue;
+    padding-top: 12px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid darkblue 1px;
 }
 
 .container {
@@ -148,7 +157,7 @@ body {
 .nt-container {
     display: grid;
     gap: 20px;
-    grid-template-columns: 15% auto 15%;
+    grid-template-columns: minmax(10%, 20%) auto minmax(10%, 20%);
     background-color: lightyellow;
 }
 
@@ -165,7 +174,8 @@ body {
 }
 
 .nt-para {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 ul {
